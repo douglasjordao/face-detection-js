@@ -35,7 +35,7 @@ This project has the objective of exemplify face detection with javascript in a 
 
   
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
   
 
@@ -43,7 +43,7 @@ These instructions will get you a copy of the project up and running on your loc
 
   
 
-This project requires [Node.js](https://nodejs.org/en/download)  v14.18.16 or above, but is highly recommended that you install the LST version.
+This project requires a Camera and [Node.js](https://nodejs.org/en/download)  v14.18.16 or above, but is highly recommended that you install the LST version.
  
 
 ### Installing
