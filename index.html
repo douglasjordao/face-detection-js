@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Face Detection</title>
+  </head>
+  <body data-bs-theme="dark">
+    <div class="container d-flex flex-column align-items-center">
+      <div class="d-flex align-items-center mb-3">
+        <img class="logo me-1" src="/logo.png" alt="logo" />
+        <h1 class="title">Detector Facial</h1>
+        <img class="logo ms-1" src="/logo.png" alt="logo" />
+      </div>
+      <div class="card" data-bs-theme="dark">
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-3">
+            <div class="d-flex">
+              <div class="me-3">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btn-check-landmark"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btn-check-landmark">
+                  Com Landmarks
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btn-check-expressions"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-primary"
+                  for="btn-check-expressions"
+                >
+                  Com Expressões
+                </label>
+              </div>
+            </div>
+
+            <button id="btn-start" type="button" class="btn btn-primary">
+              Iniciar
+            </button>
+            <button
+              id="btn-stop"
+              type="button"
+              class="btn btn-danger"
+              style="display: none"
+            >
+              Parar
+            </button>
+          </div>
+          <div class="midia d-flex justify-content-center">
+            <video id="video" width="680" height="480"></video>
+            <canvas id="canvas" width="680" height="480"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 50px;
+  border: 2px solid #70e2ff;
+  border-radius: 50%;
+}
+
+.title {
+  margin: 0;
+  color: #70e2ff !important;
+}
+
+#video {
+  border-radius: 6px;
+}
+
+#canvas {
+  position: absolute;
+}
+
+.card {
+  border-color: #70e2ff52 !important;
+  width: calc(680px + 2rem);
+}
